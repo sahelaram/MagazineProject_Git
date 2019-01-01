@@ -1,0 +1,16 @@
+private void button_ADD_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow newRow = new DataGridViewRow();
+            dataGridView1.Rows.Add(tb_name.Text, tb_family.Text, tb_username.Text, tb_pasword.Text);
+
+            User newUser = new User(tb_name.Text,tb_family.Text,tb_username.Text,tb_pasword.Text);
+           
+
+            MessageBox.Show("کاربر"+newUser.Name + " " + newUser.Family +" با موفقیت ثبت شد!");
+                    
+            tb_name.Text = "";
+            tb_family.Text = "";
+            tb_username.Text = "";
+            tb_pasword.Text = "";
+         
+        }
