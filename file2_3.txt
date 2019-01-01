@@ -1,0 +1,79 @@
+namespace magazineProject_UI
+{
+    class User
+    {
+        private String name;
+        private String family;
+        private String username;
+        private String passwrod;
+
+
+
+        public User(String name , String family , String username , String password)
+        {
+            this.Name = name;
+            this.Family = family;
+            this.Username = username;
+            this.Passwrod = passwrod;
+        }
+
+
+        public string Family
+        {
+            get
+            {
+                return family;
+            }
+
+            set
+            {
+                family = value;
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+
+            set
+            {
+                name = value;
+            }
+        }
+
+        public string Username
+        {
+            get
+            {
+                return username;
+            }
+
+            set
+            {
+                username = value;
+            }
+        }
+
+        public string Passwrod
+        {
+            get
+            {
+                return passwrod;
+            }
+
+            set
+            {
+                passwrod = value;
+            }
+        }
+
+        public String toString()
+        {
+            return Name +" "+ Family;
+        }
+
+    }
+}
