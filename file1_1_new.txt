@@ -1,0 +1,5 @@
+private void ثبتکاربرToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddUser addUserForm = new AddUser();
+            addUserForm.ShowDialog();
+        }
